@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <title>Main</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__content">
+        <a href="/" class="header__link header__link_active">Main</a>
+        <div>
+            <button class="header__link j-login-button">Login</button>
+            <button class="header__link j-register-button">Register</button>
+            <a href="/profile" class="header__link j-to-profile hidden">To profile</a>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h1>Main</h1>
+    </div>
+</section>
+
+<div class="modal j-modal-login hidden">
+    <div class="modal__content">
+        <div class="modal__close-button j-close-modal-login">X</div>
+        <form name="loginForm" class="modal__form">
+            <input type="text" name="email" class="modal__input" placeholder="Enter email">
+            <input type="password" name="password" class="modal__input" placeholder="Enter password">
+            <button class="site-button">Log in</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal j-modal-register hidden">
+    <div class="modal__content">
+        <div class="modal__close-button j-close-modal-register">X</div>
+        <form name="registerForm" class="modal__form">
+            <input required type="email" name="email" class="modal__input" placeholder="Enter email">
+            <input required type="text" name="name" class="modal__input" placeholder="Enter name">
+            <input required type="text" name="surname" class="modal__input" placeholder="Enter surname">
+            <input required type="password" name="password" class="modal__input" placeholder="Enter password">
+            <input required type="text" name="location" class="modal__input" placeholder="Enter location">
+            <input required type="number" name="age" class="modal__input" placeholder="Enter age">
+            <button class="site-button">Log in</button>
+        </form>
+    </div>
+</div>
+
+<script src="common.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>

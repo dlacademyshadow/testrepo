@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/common.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__content">
+        <a href="/" class="header__link">Main</a>
+        <div>
+            <a href="/profile" id="j-to-profile" class="header__link header__link_active">To profile</a>
+        </div>
+    </div>
+</header>
+
+<section class="profile">
+    <div class="container">
+        <h1>Profile</h1>
+
+        <div class="profile__content">
+            <div class="profile__img j-profile-img"></div>
+            <div class="profile__info">
+                <div class="profile__text">
+                    <strong>Name: </strong>
+                    <span class="j-profile-name"></span>
+                </div>
+                <div class="profile__text">
+                    <strong>Surname: </strong>
+                    <span class="j-profile-surname"></span>
+                </div>
+                <div class="profile__text">
+                    <strong>Email: </strong>
+                    <span class="j-profile-email"></span>
+                </div>
+                <div class="profile__text">
+                    <strong>Password: </strong>
+                    <span>**********</span>
+                </div>
+                <div class="profile__text">
+                    <strong>Location: </strong>
+                    <span class="j-profile-location"></span>
+                </div>
+                <div class="profile__text">
+                    <strong>Age: </strong>
+                    <span class="j-profile-age"></span>
+                </div>
+                <button class="site-button j-editing-button">Change other data</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal j-modal-editing hidden">
+    <div class="modal__content">
+        <div class="modal__close-button j-close-modal-editing">X</div>
+        <form name="editingForm" class="modal__form">
+            <input required type="email" name="email" class="modal__input">
+            <input required type="text" name="name" class="modal__input">
+            <input required type="text" name="surname" class="modal__input">
+            <input required type="text" name="location" class="modal__input">
+            <input required type="number" name="age" class="modal__input">
+            <input type="file" name="avatar" class="modal__input">
+            <button class="site-button">To change the data</button>
+        </form>
+    </div>
+</div>
+
+<script src="/common.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
